@@ -65,7 +65,20 @@ History
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 		</script>
+								 
+		<script>
+  Reveal.initialize({
+  ...
+  });
 
+  Reveal.addEventListener( 'changeToBlackTheme', function() {
+  document.getElementById('theme').setAttribute('href', 'css/theme/black.css');
+  }, false );
+
+  Reveal.addEventListener( 'changeToWhiteTheme', function() {
+  document.getElementById('theme').setAttribute('href', 'css/theme/white.css');
+  }, false );
+</script>
 
 
 		<!--[if lt IE 9]>
